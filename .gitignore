@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw source media (large originals - do not commit)
+# optimized output lives in /public and IS committed
+/assets/

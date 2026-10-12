@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "Treza Lugina Pamungkas - Software Engineer",
+    "description": "Mobile & backend engineer. Expo apps, Laravel APIs, PostgreSQL, and AI automation that removes busywork.",
+    "ogAlt": "Treza Lugina Pamungkas - Software Engineer"
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "stack": "Stack",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "skip": "Skip to content"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "lang": {
+    "label": "Language",
+    "en": "English",
+    "id": "Indonesian"
+  },
+  "music": {
+    "label": "Music",
+    "play": "Play music",
+    "pause": "Pause music",
+    "unavailable": "Music unavailable"
+  },
+  "hero": {
+    "available": "Available for work - Software Engineer",
+    "sub": "Mobile + backend engineer - Expo apps, Laravel APIs, and AI automation that removes busywork.",
+    "viewWork": "View work",
+    "getInTouch": "Get in touch",
+    "basedIn": "Based in",
+    "focus": "Focus"
+  },
+  "sections": {
+    "workIdx": "Selected work",
+    "workTitle": "Things I've shipped.",
+    "workLead": "Real projects, real users - from touring apps to booking systems. Code lives on GitHub.",
+    "stackTitle": "Tools I reach for.",
+    "stackLead": "A focused toolbox, not a buzzword list - every item here has shipped to production.",
+    "aboutTitle": "About",
+    "contactIdx": "Contact",
+    "contactTitle": "Have an idea?",
+    "contactTitleAccent": "Let's build it.",
+    "viewAll": "View all projects",
+    "readCase": "Read case study",
+    "nextUp": "Next up",
+    "nextUpBody": "AI clipping automation - auto-cut, caption, and distribute content while I sleep. In the workshop."
+  },
+  "projects": {
+    "idx": "Projects",
+    "title": "Selected work.",
+    "lead": "Case studies of things I designed, built, and shipped - with the problem, the why, and the stack reasoning.",
+    "filterAll": "All",
+    "filterMobile": "Mobile",
+    "filterWeb": "Web",
+    "filterFullstack": "Full-stack",
+    "problem": "The problem",
+    "why": "Why I built it",
+    "stackWhy": "Why this stack",
+    "features": "Key features",
+    "architecture": "Architecture",
+    "challenges": "Challenges & decisions",
+    "gallery": "Screenshots",
+    "role": "Role",
+    "year": "Year",
+    "type": "Type",
+    "links": "Links",
+    "repo": "Repository",
+    "live": "Live site",
+    "backToProjects": "All projects",
+    "nextProject": "Next project",
+    "screenshotSoon": "screenshot - coming soon",
+    "notFound": "Project not found"
+  },
+  "about": {
+    "idx": "About",
+    "title": "I like finished software.",
+    "lead": "I'm Treza - a software engineer who likes finished software: designed in the open, built with boring-reliable tools, and handed over working.",
+    "body": [
+      "I build mobile apps and backends that ship. My work sits at the intersection of product and engineering: understand the real problem, pick the boring-reliable stack, then deliver something that works and is documented well enough that the next person can pick it up.",
+      "Right now I'm building Tikum, a touring app with live tracking and SOS alerts, an IoT system for a smart water pump, plus booking systems for travel businesses. Alongside that I automate the tedious parts with AI agents and pipelines.",
+      "I'm open to freelance and full-time work - especially mobile, backend, and AI automation projects."
+    ],
+    "approachTitle": "How I work",
+    "approach": [
+      {
+        "k": "Problem first",
+        "d": "Understand the actual pain before writing a line of code. The stack follows the problem, not the other way around."
+      },
+      {
+        "k": "Boring-reliable",
+        "d": "Proven tools over shiny ones. Laravel, PostgreSQL, Expo - things that are still maintained in three years."
+      },
+      {
+        "k": "Documented",
+        "d": "Every project ships with a README that explains the architecture, the flows, and the trade-offs."
+      },
+      {
+        "k": "AI-accelerated",
+        "d": "I use AI tools to move faster without sacrificing architecture, code quality, or clarity."
+      }
+    ],
+    "stackTitle": "Tech stack",
+    "exploringTitle": "Currently exploring",
+    "timelineTitle": "Timeline",
+    "facts": {
+      "location": "Based in Indonesia",
+      "focus": "Web & App · Internet of Things",
+      "open": "Open to freelance & full-time"
+    }
+  },
+  "contact": {
+    "title": "Have an idea?",
+    "titleAccent": "Let's build it.",
+    "lead": "Tell me what you're building. If it's mobile, backend, or AI automation, I'd love to hear about it.",
+    "emailCta": "Send me an email",
+    "or": "or find me on",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "availability": "Currently available for new projects"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "backToTop": "Back to top",
+    "builtWith": "Built with Next.js & Tailwind CSS"
+  },
+  "common": {
+    "loading": "Loading",
+    "error": "Something went wrong",
+    "home": "Home",
+    "language": "Language",
+    "back": "Back"
+  }
+}

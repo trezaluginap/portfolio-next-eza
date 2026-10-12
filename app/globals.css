@@ -1,26 +1,176 @@
 @import "tailwindcss";
 
+/* ---- Dark mode via class (next-themes) ---- */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* =========================================================
+   NEO-BRUTALISM DESIGN TOKENS
+   Palette: electric yellow + deep black + off-white
+   ========================================================= */
+@theme {
+  /* Colors - light mode defaults */
+  --color-ink: #0a0a0a;
+  --color-paper: #fafafa;
+  --color-accent: #ffe500;
+  --color-accent-2: #ff5c00;
+  --color-muted: #6b6b6b;
+
+  /* Fonts (wired to next/font CSS vars in layout) */
+  --font-sans: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-jet), ui-monospace, "SFMono-Regular", monospace;
+
+  /* Radius - sharp by default, pills for contrast */
+  --radius-brutal: 0px;
+  --radius-pill: 9999px;
+
+  /* Hard shadows - no blur, pure offset */
+  --shadow-brutal-sm: 3px 3px 0 0 var(--color-ink);
+  --shadow-brutal: 6px 6px 0 0 var(--color-ink);
+  --shadow-brutal-lg: 10px 10px 0 0 var(--color-ink);
+  --shadow-brutal-accent: 6px 6px 0 0 var(--color-accent);
+}
+
+/* Theme-aware surface variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --surface: var(--color-paper);
+  --surface-fg: var(--color-ink);
+  --border-color: var(--color-ink);
+  --shadow-color: var(--color-ink);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --surface: #0a0a0a;
+  --surface-fg: #fafafa;
+  --border-color: #fafafa;
+  --shadow-color: #fafafa;
+
+  /* keep accent vivid in dark */
+  --color-accent: #ffe500;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* =========================================================
+   BASE
+   ========================================================= */
+@layer base {
+  * {
+    border-color: var(--border-color);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--surface);
+    color: var(--surface-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-ink);
+  }
+
+  /* Always-visible keyboard focus (a11y) */
+  :focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+
+  /* Hide scrollbar artifacts on marquee rows */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* =========================================================
+   UTILITIES
+   ========================================================= */
+@utility shadow-hard {
+  box-shadow: var(--shadow-brutal);
+}
+@utility shadow-hard-sm {
+  box-shadow: var(--shadow-brutal-sm);
+}
+@utility shadow-hard-lg {
+  box-shadow: var(--shadow-brutal-lg);
+}
+@utility shadow-hard-accent {
+  box-shadow: var(--shadow-brutal-accent);
+}
+
+/* Brutal border */
+@utility border-brutal {
+  border: 3px solid var(--border-color);
+}
+@utility border-brutal-thick {
+  border: 4px solid var(--border-color);
+}
+
+/* Interactive "lift" - element rises and shadow grows (soft easing) */
+@utility brutal-lift {
+  transition:
+    transform 0.32s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.32s cubic-bezier(0.25, 0.8, 0.25, 1),
+    background-color 0.32s ease;
+  will-change: transform, box-shadow;
+}
+
+/* =========================================================
+   KEYFRAMES
+   ========================================================= */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.75);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+.animate-pulse-dot {
+  animation: pulse-dot 2.2s ease-in-out infinite;
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

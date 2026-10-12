@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "Treza Lugina Pamungkas - Software Engineer",
+    "description": "Engineer mobile & backend. Aplikasi Expo, API Laravel, PostgreSQL, dan otomatisasi AI yang menghapus pekerjaan repetitif.",
+    "ogAlt": "Treza Lugina Pamungkas - Software Engineer"
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Karya",
+    "stack": "Stack",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "menu": "Menu",
+    "close": "Tutup",
+    "skip": "Lewati ke konten"
+  },
+  "theme": {
+    "toggle": "Ganti tema",
+    "light": "Terang",
+    "dark": "Gelap"
+  },
+  "lang": {
+    "label": "Bahasa",
+    "en": "Inggris",
+    "id": "Indonesia"
+  },
+  "music": {
+    "label": "Musik",
+    "play": "Putar musik",
+    "pause": "Jeda musik",
+    "unavailable": "Musik tidak tersedia"
+  },
+  "hero": {
+    "available": "Terbuka untuk kerja - Software Engineer",
+    "sub": "Engineer mobile + backend - aplikasi Expo, API Laravel, dan otomatisasi AI yang menghapus pekerjaan repetitif.",
+    "viewWork": "Lihat karya",
+    "getInTouch": "Hubungi saya",
+    "basedIn": "Berbasis di",
+    "focus": "Fokus"
+  },
+  "sections": {
+    "workIdx": "Karya pilihan",
+    "workTitle": "Yang sudah saya rilis.",
+    "workLead": "Proyek nyata, pengguna nyata - dari aplikasi touring sampai sistem booking. Kodenya ada di GitHub.",
+    "stackTitle": "Alat yang saya pakai.",
+    "stackLead": "Toolbox yang fokus, bukan daftar buzzword - semuanya sudah dipakai di produksi.",
+    "aboutTitle": "Tentang",
+    "contactIdx": "Kontak",
+    "contactTitle": "Punya ide?",
+    "contactTitleAccent": "Ayo bangun.",
+    "viewAll": "Lihat semua proyek",
+    "readCase": "Baca studi kasus",
+    "nextUp": "Selanjutnya",
+    "nextUpBody": "Otomatisasi clipping AI - potong, beri caption, dan distribusikan konten otomatis saat saya tidur. Masih di workshop."
+  },
+  "projects": {
+    "idx": "Proyek",
+    "title": "Karya pilihan.",
+    "lead": "Studi kasus hal-hal yang saya rancang, bangun, dan rilis - lengkap dengan masalahnya, alasannya, dan alasan pemilihan stack.",
+    "filterAll": "Semua",
+    "filterMobile": "Mobile",
+    "filterWeb": "Web",
+    "filterFullstack": "Full-stack",
+    "problem": "Masalahnya",
+    "why": "Kenapa dibangun",
+    "stackWhy": "Kenapa stack ini",
+    "features": "Fitur utama",
+    "architecture": "Arsitektur",
+    "challenges": "Tantangan & keputusan",
+    "gallery": "Screenshot",
+    "role": "Peran",
+    "year": "Tahun",
+    "type": "Tipe",
+    "links": "Tautan",
+    "repo": "Repositori",
+    "live": "Situs live",
+    "backToProjects": "Semua proyek",
+    "nextProject": "Proyek berikutnya",
+    "screenshotSoon": "screenshot - segera",
+    "notFound": "Proyek tidak ditemukan"
+  },
+  "about": {
+    "idx": "Tentang",
+    "title": "Saya suka software yang selesai.",
+    "lead": "Saya Treza - software engineer yang suka software selesai: dirancang terbuka, dibangun dengan tools yang boring-reliable, dan diserahkan dalam keadaan berfungsi.",
+    "body": [
+      "Saya membangun aplikasi mobile dan backend yang benar-benar rilis. Pekerjaan saya ada di persimpangan produk dan engineering: pahami masalah nyatanya, pilih stack yang terbukti, lalu kirim sesuatu yang berfungsi dan terdokumentasi cukup baik sehingga orang berikutnya bisa melanjutkan.",
+      "Saat ini saya membangun Tikum, aplikasi touring dengan live tracking dan SOS alert, sistem IoT untuk pompa air pintar, plus sistem booking untuk bisnis travel. Di samping itu saya mengotomatiskan bagian yang membosankan dengan AI agent dan pipeline.",
+      "Saya terbuka untuk freelance dan full-time - terutama proyek mobile, backend, dan otomatisasi AI."
+    ],
+    "approachTitle": "Cara saya bekerja",
+    "approach": [
+      {
+        "k": "Masalah dulu",
+        "d": "Pahami pain-nya sebelum menulis satu baris kode. Stack mengikuti masalah, bukan sebaliknya."
+      },
+      {
+        "k": "Boring-reliable",
+        "d": "Tools yang terbukti, bukan yang sedang hype. Laravel, PostgreSQL, Expo - hal yang masih di-maintain tiga tahun lagi."
+      },
+      {
+        "k": "Terdokumentasi",
+        "d": "Setiap proyek rilis dengan README yang menjelaskan arsitektur, alur, dan trade-off-nya."
+      },
+      {
+        "k": "Dipercepat AI",
+        "d": "Saya pakai AI tools untuk bergerak lebih cepat tanpa mengorbankan arsitektur, kualitas kode, atau kejelasan."
+      }
+    ],
+    "stackTitle": "Tech stack",
+    "exploringTitle": "Sedang didalami",
+    "timelineTitle": "Linimasa",
+    "facts": {
+      "location": "Berbasis di Indonesia",
+      "focus": "Web & App · Internet of Things",
+      "open": "Terbuka untuk freelance & full-time"
+    }
+  },
+  "contact": {
+    "title": "Punya ide?",
+    "titleAccent": "Ayo bangun.",
+    "lead": "Ceritakan apa yang sedang kamu bangun. Kalau soal mobile, backend, atau otomatisasi AI, saya ingin dengar.",
+    "emailCta": "Kirim email",
+    "or": "atau temukan saya di",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "availability": "Sedang terbuka untuk proyek baru"
+  },
+  "footer": {
+    "rights": "Hak cipta dilindungi.",
+    "backToTop": "Kembali ke atas",
+    "builtWith": "Dibuat dengan Next.js & Tailwind CSS"
+  },
+  "common": {
+    "loading": "Memuat",
+    "error": "Terjadi kesalahan",
+    "home": "Home",
+    "language": "Bahasa",
+    "back": "Kembali"
+  }
+}
