@@ -5,7 +5,7 @@ export const site = {
     en: "Software Engineer - Mobile & Backend",
     id: "Software Engineer - Mobile & Backend",
   },
-  url: "https://treza.vercel.app",
+  url: "https://treza-portfolio-trezas-projects.vercel.app",
   location: {
     en: "Indonesia",
     id: "Indonesia",
